@@ -1,14 +1,18 @@
 #.bashrc...
 
+#basic info about the system
 uptime
 
+#I'm lazy...and like to use terminals as calculators
 calc () {
 echo "scale=4; $1" | bc
 }
 
-#Custom
+#Custom variables
 export PATH=$PATH:/opt/local/bin:/opt/local/sbin:$HOME/.rvm/bin 
 export EDITOR=vim
+
+#Custom Alias'
 
 #fix stupid scripts that require cleartext pw in config:
 #note, will still echo your password...
