@@ -1,5 +1,7 @@
 set nocompatible  "don't worry about being compatible with old school vim
 
+set modelines=0 "prevent some security holes
+
 set titlestring=%f title "make filename title of terminal
 
 " tabs == 2 spaces
@@ -28,4 +30,14 @@ syntax enable "turn on syntax highlighting
 
 set background=dark "because..dark is the new black
 
-
+"Custom bindings
+"stop hitting help accidentally
+inoremap <F1> <ESC>
+"let us turn on relative line numbers with F1
+nnoremap <F1> :set rnu<cr>
+vnoremap <F1> :set rnu<cr>
+"let us turn on absolute line numbers with F2
+nnoremap <F2> :set nu<cr>
+vnoremap <F2> :set nu<cr>
+"less hand movement to get out of insert mode
+inoremap hh <ESC> 
