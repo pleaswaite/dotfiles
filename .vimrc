@@ -40,6 +40,7 @@ vnoremap <F1> :set rnu<cr>
 nnoremap <F2> :set nu<cr>
 vnoremap <F2> :set nu<cr>
 "less hand movement to get out of insert mode
+"note: hh is right under the homerow for us dvorak users
 inoremap hh <ESC>
 "quick write with ss
 inoremap ss :w<cr> 
