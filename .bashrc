@@ -17,4 +17,4 @@ export EDITOR=vim
 #fix stupid scripts that require cleartext pw in config:
 #note, will still echo your password...
 alias pwprompt='read -s -p "Password: " ; echo >&2 ; echo ${REPLY}'
-alias vc=vimcat #vimcat == colourized cat output!
+alias cat=vimcat #vimcat == colourized cat output!
