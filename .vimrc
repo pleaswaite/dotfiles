@@ -43,6 +43,5 @@ vnoremap <F2> :set nu<cr>
 "note: hh is right under the homerow for us dvorak users
 inoremap hh <ESC>
 "quick write with ss
-inoremap ss :w<cr> 
 vnoremap ss :w<cr> 
 nnoremap ss :w<cr> 
