@@ -39,6 +39,9 @@ vnoremap <F1> :set rnu<cr>
 "let us turn on absolute line numbers with F2
 nnoremap <F2> :set nu<cr>
 vnoremap <F2> :set nu<cr>
+"let us turn off line numbers with F3
+nnoremap <F3> :set nonu<cr>
+vnoremap <F3> :set nonu<cr>
 "less hand movement to get out of insert mode
 "note: hh is right under the homerow for us dvorak users
 inoremap hh <ESC>
