@@ -48,8 +48,9 @@ inoremap hh <ESC>
 "quick write with ss
 vnoremap ss :w<cr> 
 nnoremap ss :w<cr>
-"insert date/timestamp into line 
-vnoremap <F4> :r!date
-inoremap <F4> :r!date
-nnoremap <F4> :r!date
+"insert date/timestamp into line and switch to insert mode
+"handy for logging crap during incidents... 
+vnoremap <F4> :r!date<cr>A<cr>
+inoremap <F4> <ESC>:r!date<cr>A<cr>
+nnoremap <F4> :r!date<cr>A<cr>
  
