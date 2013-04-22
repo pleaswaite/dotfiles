@@ -47,4 +47,9 @@ vnoremap <F3> :set nonu<cr>
 inoremap hh <ESC>
 "quick write with ss
 vnoremap ss :w<cr> 
-nnoremap ss :w<cr> 
+nnoremap ss :w<cr>
+"insert date/timestamp into line 
+vnoremap <F4> :r!date
+inoremap <F4> :r!date
+nnoremap <F4> :r!date
+ 
