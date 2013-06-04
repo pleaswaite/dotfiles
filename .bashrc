@@ -29,3 +29,5 @@ alias ll='ls -halG'
 alias rm='rm -iv'
 alias more='less'
 
+#make rvm work...dammit
+source ~/.rvm/scripts/rvm
