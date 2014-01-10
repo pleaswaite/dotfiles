@@ -59,6 +59,9 @@ alias ll='ls -halG'
 alias rm='rm -iv'
 alias more='less'
 alias sshpasswd='ssh -o PubkeyAuthentication=no'
+alias such=git
+alias very=git
+alias wow='git status' 
 
 #make rvm work...dammit
 source ~/.rvm/scripts/rvm
