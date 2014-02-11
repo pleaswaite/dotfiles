@@ -23,8 +23,8 @@ set nowrap "don't wrap text
 set scrolloff=4 "leave at least 4 lines of context above and below a scroll
 set ttyfast "redraw faster to scroll smoother
 
-set history=5000 "I like to see what I did forever ago
-set undolevels=5000 "and to undo what I did forever ago...
+set history=5001 "I like to see what I did forever ago
+set undolevels=5001 "and to undo what I did forever ago...
 
 syntax enable "turn on syntax highlighting
 
