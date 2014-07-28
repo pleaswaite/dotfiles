@@ -44,8 +44,7 @@ HISTSIZE=5000
 shopt -s histappend
 
 #Custom variables
-export PATH=/Users/swaite/.rvm/gems/ruby-1.9.3-p392/bin:/Users/swaite/.rvm/gems/ruby-1.9.3-p392@global/bin:/Users/swaite/.rvm/rubies/ruby-1.9.3-p392/bin:/Users/swaite/.rvm/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/git/bin:/opt/local/bin:/opt/local/sbin:/Users/swaite/bin:/usr/bin
-export PATH=$PATH:/opt/local/bin:/opt/local/sbin:$HOME/.rvm/bin:~/bin 
+export PATH=/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/git/bin:/opt/local/bin:/opt/local/sbin:/Users/swaite/bin:/usr/bin:/opt/local/bin:/opt/local/sbin:~/bin 
 export EDITOR=vim
 
 #Custom Alias'
@@ -63,5 +62,3 @@ alias such=git
 alias very=git
 alias wow='git status' 
 
-#make rvm work...dammit
-source ~/.rvm/scripts/rvm
