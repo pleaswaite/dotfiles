@@ -44,7 +44,7 @@ HISTSIZE=5000
 shopt -s histappend
 
 #Custom variables
-export PATH=/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/git/bin:/opt/local/bin:/opt/local/sbin:/Users/swaite/bin:/usr/bin:/opt/local/bin:/opt/local/sbin:~/bin 
+export PATH=/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/git/bin:/opt/local/sbin:/Users/swaite/bin:/usr/bin:/opt/local/bin:/opt/local/sbin:~/bin:~/.aws/bin 
 export EDITOR=vim
 
 #Custom Alias'
@@ -61,4 +61,10 @@ alias sshpasswd='ssh -o PubkeyAuthentication=no'
 alias such=git
 alias very=git
 alias wow='git status' 
-
+alias s4cmd='/usr/bin/python ~/bin/s4cmd/s4cmd.py'
+alias nvpy='/usr/bin/python ~/bin/nvpy/nvpy/nvpy.py'
+alias git-svn='git svn'
+#add aws autocompletion
+complete -C aws_completer aws
+#additional files to source
+source ~/.bash/ec2_source
