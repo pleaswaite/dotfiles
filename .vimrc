@@ -53,4 +53,7 @@ nnoremap ss :w<cr>
 vnoremap <F4> :r!date<cr>A<cr>
 inoremap <F4> <ESC>:r!date<cr>A<cr>
 nnoremap <F4> :r!date<cr>A<cr>
- 
+
+"Special stuff for Python
+autocmd Filetype python set expandtab "Break tab chars into spaces
+autocmd Filetype python set cc=80	"Colorize the 80th column

@@ -64,6 +64,7 @@ alias wow='git status'
 alias s4cmd='/usr/bin/python ~/bin/s4cmd/s4cmd.py'
 alias nvpy='/usr/bin/python ~/bin/nvpy/nvpy/nvpy.py'
 alias git-svn='git svn'
+alias mine='aws ec2 describe-instances | grep swaite'
 #add aws autocompletion
 complete -C aws_completer aws
 #additional files to source
