@@ -56,4 +56,6 @@ nnoremap <F4> :r!date<cr>A<cr>
 
 "Special stuff for Python
 autocmd Filetype python set expandtab "Break tab chars into spaces
-autocmd Filetype python set cc=80	"Colorize the 80th column
+if exists('+colorcolumn')
+	autocmd Filetype python set cc=80	"Colorize the 80th column
+endif
