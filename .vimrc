@@ -8,7 +8,7 @@ set titlestring=%f title "make filename title of terminal
 set tabstop=2
 set softtabstop=2
 set shiftwidth=2
-"set expandtab
+set expandtab
 
 set smarttab "autoindent when it makes sense
 

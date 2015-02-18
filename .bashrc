@@ -1,11 +1,20 @@
 #.bashrc...
 
+#gimme the quote, yo
+fortune taglines
 #basic info about the system
 uptime
+
 
 #I'm lazy...and like to use terminals as calculators
 calc () {
 echo "scale=4; $1" | bc
+}
+
+sshuntil () {
+until [ `ssh $1` ]; do
+	ssh $1
+done
 }
 #calc () {
 #	export CALCSTRING=""
@@ -38,10 +47,17 @@ exit 0
 }
 
 #moar bash_history
-HISTSIZE=5000
-
+HISTSIZE=1000000
 #append history if terminal exits
 shopt -s histappend
+#store history immediately
+PROMPT_COMMAND='history -a'
+#compact multiline commands
+shopt -s cmdhist
+#ignore dupes and whitespace in history
+HISTCONTROL=ignoreboth
+#ignore crap we don't really care about
+HISTIGNORE='ls:bg:fg:history:df'
 
 #Custom variables
 export PATH=/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/git/bin:/opt/local/sbin:/Users/swaite/bin:/usr/bin:/opt/local/bin:/opt/local/sbin:~/bin:~/.aws/bin 
