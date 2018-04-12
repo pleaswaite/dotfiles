@@ -16,6 +16,8 @@ set ignorecase "don't care about caps for searching
 set smartcase "ignore ignorecase when it makes sense
 
 set number "we like line numbers in our file...
+set relativenumber "so we display absolute number of current
+									 "line and the relative numbers around it
 set ruler "and columnn numbers, too
 
 set nowrap "don't wrap text
@@ -25,6 +27,8 @@ set ttyfast "redraw faster to scroll smoother
 
 set history=5001 "I like to see what I did forever ago
 set undolevels=5001 "and to undo what I did forever ago...
+
+set nrformats=alpha
 
 syntax enable "turn on syntax highlighting
 
@@ -54,8 +58,13 @@ vnoremap <F4> :r!date<cr>A<cr>
 inoremap <F4> <ESC>:r!date<cr>A<cr>
 nnoremap <F4> :r!date<cr>A<cr>
 
+" Allow saving of files as sudo when I forgot to start vim using sudo.
+cmap w!! w !sudo tee > /dev/null %
+
 "Special stuff for Python
 autocmd Filetype python set expandtab "Break tab chars into spaces
 if exists('+colorcolumn')
 	autocmd Filetype python set cc=80	"Colorize the 80th column
 endif
+
+execute pathogen#infect()
